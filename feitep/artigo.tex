@@ -1,0 +1,52 @@
+\documentclass[12pt,openright,twoside,article,a4paper,
+    chapter=TITLE, % Títulos de capítulos convertidos em letras maiúsculas
+    section=TITLE, % Títulos de seções convertidos em letras maiúsculas
+    subsection=TITLE, % Títulos de subseções convertidos em letras maiúsculas
+    subsubsection=TITLE, % Títulos de subsubseções em letras maiúsculas
+    subsubsubsection=TITLE,brazil,english]{abntex2}
+
+\usepackage{ifxetex}
+    \ifxetex{}
+        \usepackage{fontspec}
+        \defaultfontfeatures{Ligatures={TeX}}
+    \else
+        \usepackage[utf8]{inputenc}
+        \usepackage[T1]{fontenc}
+    \fi
+
+\usepackage{lmodern} % Fonte
+\usepackage{multirow} % Suporte a multilinha em tabelas
+\usepackage{csquotes} % Apóstrofos corretos
+\usepackage{indentfirst} % Indenta o primeiro parágrafo de cada seção.
+\usepackage{hyperref} % Suporte a metadados no PDF
+\usepackage[hyphenbreaks]{breakurl} % Suporte a URLs com quebra de linha
+\usepackage[style=abnt,pretty]{biblatex} % Bibliografia
+\usepackage{graphicx} % Suporte à inserção de imagens
+\usepackage{lastpage} % Necessário para a ficha catalográfica
+\usepackage{draftwatermark} % Suporte à marca d'água
+\SetWatermarkText{\input{feitep/logo/FEITEP-nolettering-15a.eps_tex}}
+\SetWatermarkAngle{0}
+
+% Margens e espaçamentos da ABNT
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\setlength{\onelineskip}{0.2cm}
+
+\setlrmarginsandblock{3cm}{2cm}{*}
+\setulmarginsandblock{3cm}{2cm}{*}
+\checkandfixthelayout{}
+
+\input{informacoes.tex}
+
+\makeatletter
+\hypersetup{
+    pdftitle={\imprimirtitulo},
+    pdfauthor={\imprimirautor},
+    pdfsubject={\imprimirpreambulo},
+    pdfcreator={LaTeX with abnTeX2},
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+\makeatother
