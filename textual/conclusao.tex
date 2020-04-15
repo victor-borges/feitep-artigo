@@ -4,5 +4,41 @@ Duis fermentum elit diam, eget tempor libero efficitur ac. Duis at auctor massa,
 \subsection{Outra subseção}
 Duis fermentum elit diam, eget tempor libero efficitur ac. Duis at auctor massa, eu fringilla tellus. Fusce malesuada at felis vitae mollis. Nam et justo id dui malesuada tristique.
 
+\begin{table}[ht]
+	\centering
+	\IBGEtab{%
+		\caption{Cronograma}%
+		\label{cronograma}
+	}{
+    \begin{tabular}{p{6.3cm}ccccccccccccc}
+        \toprule{}
+        Descrição das etapas & \multicolumn{12}{c}{Meses} \\
+        & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
+        \midrule{}
+        Estudo aprofundado sobre a plataforma {\LaTeX} e seus pacotes de dados & X & X & & & & & & & & & & \\
+        \midrule{}
+        Levantamento dos pacotes de dados mais relevantes aos acadêmicos & & & X & X & X & X & & & & & & \\
+        \midrule{}
+        Construção e entrega do relatório parcial de IC & & & & & & & X & X & & & & \\
+        \midrule{}
+        Aplicação de testes na turma de IC para analisar a eficácia do projeto & & & & & & & & & X & X & & \\
+        \midrule{}
+        Construção e entrega do relatório final de IC & & & & & & & & & & & X & X \\
+        \bottomrule{}
+	\end{tabular}
+	}{%
+	\fonte{Produzido pelos autores}
+	\nota{Tabela em conformidade com a ABNT e o IBGE}
+	}
+\end{table}
+
 \subsubsection{Sub sub seção}
 Este parágrafo já está no 3º nível.
+
+\begin{figure}[htb]
+	\caption{\label{exemplo}Figura de exemplo}
+	\begin{center}
+	\includegraphics[scale=0.20]{textual/exemplo.png}
+	\end{center}
+	\legend{Fonte: Produzido pelos autores}
+\end{figure}
