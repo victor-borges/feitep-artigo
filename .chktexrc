@@ -368,7 +368,7 @@ Silent
 
     \csname \endcsname
 
-    \z@ \p@ \@warning \typeout
+    \z@ \p@ \@warning \typeout \f@
 
     \dots \ldots \input \endinput \nextline \leavevmode \cdots
     \appendix \listfiles \and \quad

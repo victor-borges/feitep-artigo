@@ -27,11 +27,11 @@
 \begingroup%
   \makeatletter%
   \providecommand\color[2][]{%
-    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package `color.sty' is not loaded}%
     \renewcommand\color[2][]{}%
   }%
   \providecommand\transparent[1]{%
-    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package `transparent.sty' is not loaded}%
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
@@ -42,7 +42,7 @@
     \ifx\svgscale\undefined%
       \relax%
     \else%
-      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+      \setlength{\unitlength}{\unitlength*\real{\svgscale}}%
     \fi%
   \else%
     \setlength{\unitlength}{\svgwidth}%
