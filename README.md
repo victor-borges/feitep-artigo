@@ -1,6 +1,6 @@
 # FEITEP - Template para artigos científicos
 
-Este repositório contém um _template_ para artigos científicos desenvolvidos na Faculdade de Engenharias e Arquitetura - FEITEP. Instale uma distribuição LaTeX, faça um **fork** desse repositório, clone e pronto!
+Este repositório contém um _template_ para artigos científicos desenvolvidos na Faculdade de Engenharias e Arquitetura - FEITEP.
 
 ## Trabalhos acadêmicos
 
